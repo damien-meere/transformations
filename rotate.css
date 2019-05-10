@@ -3,6 +3,7 @@
     height: 100px;
     background-color: #e84610;
     transform: translate(100px, 100px);
+    animation: spin 2s alternate infinite ease-in-out;
 }
 
 .box:hover{
@@ -14,5 +15,15 @@
     transition-property: width, height;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        transition-duration: 2s;
+      
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
